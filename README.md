@@ -14,9 +14,9 @@
 - 安装[Gulp](http://gulpjs.com/) :npm install -g gulp(全局安装);
 - 安装php-cgi:并将php-cgi可执行程序添加到环境变量中
 
-### 关于安装php-cgi
+- 关于安装php-cgi:
 - brew install php54 --with-cgi --with-debug , 如果提示远程服务挂镜,则执行如下命令:
-- 终端输入以下:'sh -c "$( curl http://fouber.github.io/install-php-cgi/install-php.sh -k )" -o 5.4.38'命令;
+- 'sh -c "$( curl http://fouber.github.io/install-php-cgi/install-php.sh -k )" -o 5.4.38';
 - 如果两者都挂了，则复制插件:下载php-cgi(在百度中搜索"php-cgi for mac",如:php-mac.tar.gz)然后解压,将bin文件中的"php-cgi,phpize,php-config"文件至"/usr/local/bin/"下；
 
 
