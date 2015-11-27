@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Arial","Microsoft YaHei", "微软雅黑", "宋体";
+}
+
+html * {
+  max-height:1000000px;
+}
+
+html,body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /*font: normal normal 14px/150% Arial, Helvetica, sans-serif;*/
+  background-color: #ffffff;
+  // height:100%;
+  font-size: 62.5%;
+}
+
+/***********通用基本类1************/
+/*格式化样式*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, a {
+  padding: 0px;
+  margin: 0px;
+  list-style: none
+}
+
+article, aside, dialog, footer, header, section, footer, nav, figure, menu {
+  display: block
+}
+
+button, input, optgroup, select, textarea, p, i {
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  color: inherit;
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  cursor: pointer;
+  color: #333;
+}
+
+/*css定义超链接四个状态是有顺序的。*/
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+  border: none;
+}
+
+/*以上语句分别定义了"链接、已访问过的链接、鼠标停在上方时、点下鼠标时"的样式。
+注意，必须按以上顺序写，否则显示可能和你预想的不一样。记住它们的顺序是“LVHA”。*/
+
+
+.zoom {
+  zoom: 1
+}
+
+img{
+  border: 0;
+}
+
+@imgroot: "../imgs/";
+@left: left;
+@right: right;
+@center: center;
+@top: top;
+@bottom: bottom;
+@middle: middle;
+@auto: 0px auto;
+@none: none;
+@hidden: hidden;
+
+@relative: relative;
+@absolute: absolute;
+@fix: fixed;
+@line: inline;
+@block: block;
+@lineblock: inline-block;
+@both: both;
+@pointer: pointer;
+@tablecell:table-cell;
+.text {
+  word-wrap: break-word;
+  overflow: @hidden;
+  word-break: break-all
+}
+
+.vmdis {
+  display: table-cell;
+  *display: @line;
+  zoom: 1;
+  vertical-align: @middle;
+}
+
+.mt10 {
+  margin-top: 10px
+}
+
+.mt60 {
+  margin-top: 60px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.mb10 {
+  margin-bottom: 10px
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+input[type="checkbox"] {
+  font-size: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+/*万能float闭合1*/
+.clear {
+  clear: @both
+}
+
+.hidden {
+  display: none;
+}
+.hide {
+  display: none;
+}
+.detail-doc-title {
+  margin-left: 10px;
+}
+/*万能float闭合2*/
+.clearfix:after {
+  content: ".";
+  display: @block;
+  height: 0;
+  clear: @both;
+  visibility: @hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+/*万能float闭合3*/
+.clear-zoom {
+  height: 0px;
+  clear: @both;
+  font-size: 0px;
+  line-height: 0px;
+  zoom: 1;
+}
+
+/*万能float闭合4*/
+.clear-block {
+  zoom: 1;
+  display: @block;
+}
+
+.equal-height {
+  /*控制背景溢出*/
+  margin-bottom: -32800px;
+  padding-bottom: 32800px;
+}
+
+/*CSS Hack*/
+.holder {
+  /*CSS盒子内容部分垂直居中*/
+  width: 200px;
+  height: 100px;
+  border: 1px solid #777;
+  text-align: @center;
+  display: table-cell;
+  vertical-align: @middle;
+}
+
+/*以下样式针对IE*/
+.edge {
+  width: 0;
+  height: 100%;
+  display: @lineblock;
+  vertical-align: @middle;
+}
+
+.class {
+  background-color: #FFFF00; /*所有浏览器*/
+  *background-color: #00FF00; /*IE6,IE7*/
+  _background-color: #00FFFF; /*IE6*/
+}

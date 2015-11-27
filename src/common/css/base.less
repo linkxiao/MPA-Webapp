@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+header{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size:2.6em;
+  text-align: center;
+  background-color:#1B9BFF;//#1B9BFF;
+  color:#fff;
+  position:fixed;
+   top:0;
+  //  right:0;
+  //  left:0;
+   z-index:999;
+  // background:#07b8dd;
+  // color:#fff;
+
+  .header-l{
+      position:absolute;
+      top:5px;
+      left:0;
+      padding:0 15px;
+  }
+  .header-m{
+      text-align:center;
+      font-size:17px;
+  }
+  .header-r{
+      position:absolute;
+      top:0;
+      right:0;
+  }
+}
+
+.wrap{
+    width: 100%;
+    font-size: 10px;
+    position: relative;
+    top: 50px;
+    .banner{
+        position:relative;
+        img{
+          width:100%;
+          height:100%;
+          min-width: 320px;
+          min-height: 200px;//160px;
+          border:none;
+        }
+        .banner-title{
+          position: absolute;
+          bottom: 5px;
+          left: 0;
+          width: 100%;
+          text-indent: 1.2em;
+          text-align: left;
+          h5{
+            color:#fff;
+            font-weight: normal;
+            font-size:1.8em;
+          }
+        }
+     }
+}
+
+
+//医院模块
+.commonBlock(@c){
+    width:48%;
+    box-sizing: border-box;
+    display:@lineblock;
+    height:75px;
+    padding-left: 13px;
+    padding-top: 10px;
+    color:@c;
+}
+
+// 模块间隔
+.space-width{
+    //display:@lineblock;
+    width:3%;
+    height:75px;
+    float:left;
+}
+.maxWidth(@w){
+    max-width: @w;
+    overflow:@hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+// 针对png作背景图的方式设置icon
+.icon-1{
+    background-image: url("../img/zryh/icon-1.png");
+    right:5px;
+    bottom:0;
+    opacity: 0.2;
+}
+.icon-2{
+    background-image: url("../img/zryh/icon-2.png");
+    background-size: 100% 100%;
+    right:5px;
+    bottom:0;
+}
+.icon-3{
+    background-image: url("../img/zryh/icon-3.png");
+    right:5px;
+    bottom:0;
+}
+.icon-4{
+    background-image: url("../img/zryh/icon-4.png");
+    right:5px;
+    bottom:0;
+}
+.icon-5{
+    background-image: url("../img/zryh/icon-5.png");
+    right:5px;
+    height: 36px;
+    bottom:0;
+}
+.icon-6{
+    background-image: url("../img/sdph/icon-6.png");
+    right: 5px;
+    bottom: 0;
+}
+.btn-back{
+  width: 12px;
+  height: 20px;
+  display: inline-block;
+  //position:relative;
+  // top:2px;
+  // left:0;
+  background-image: url("../common/img/icon/icon-arrow.png");
+  background-size: 100% 100%;
+}
+.btn-enter{
+  display:inline-block;
+  width:40px;
+  height:40px;
+  background-image: url("../common/img/icon/icon-enter.png");
+  background-size: 100% 100%;
+}
+// footer{
+//     display:@block;
+//     height:40px;
+//     background-color: #ececec;
+//     .outlink{
+//         padding-top: 12px;
+//         font-size: 1.4rem;
+//         color:#7e7e7e;
+//         text-align: @center;
+//         a{
+//             color: #01aed2;
+//         }
+//     }
+// }
+footer{
+    width: 100%;
+    height:48px;
+    display:block;
+    margin-top:50px;
+    background-color: #ececec;//#e8ebed;
+    .outlink{
+        line-height: 48px;
+        font-size: 1.3rem;
+        color:#7e7e7e;
+        text-align: center;
+        a{
+            color: #01aed2;
+        }
+    }
+}
+
+// footer{
+//     display:@block;
+//     height:40px;
+//     background-color: #ececec;
+//     .outlink{
+//         padding-top: 12px;
+//         font-size: 1.4rem;
+//         color:#7e7e7e;
+//         text-align: @center;
+//         a{
+//             color: #01aed2;
+//         }
+//     }
+// }

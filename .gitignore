@@ -1,0 +1,39 @@
+# cat .gitignore
+node_modules/
+build/
+fe/
+templates_c
+mock/templates_c
+#conf.tpl
+output/
+release/
+directDemo/
+gulpfile-new.js
+
+tmp
+npm-debug.log
+Thumbs.db
+jquery-2.1.3.min.js
+module-back.conf
+jquery.d.ts
+jump.html
+
+
+/test/tmp/*.tgz
+/data/p3/dep
+/data/p3/module.conf
+doc/*.txt
+
+.idea/
+.DS_Store
+*.swp
+# 忽略所有 .a 和.idea结尾的文件
+*.a
+*.idea/
+
+# 但 lib.a 除外
+!lib.a
+
+
+.tags
+.tags_sorted_by_file

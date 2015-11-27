@@ -1,0 +1,51 @@
+{
+  "name": "gulp-dev",
+  "version": "1.0.0",
+  "description": "gulp-dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linkxiao/MPA-Webapp.git"
+  },
+  "keywords": [
+    "gulp-dev"
+  ],
+  "author": "linkxiao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/linkxiao/MPA-Webapp.git/issues"
+  },
+  "homepage": "https://github.com/linkxiao/MPA-Webapp",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-connect-php": "*",
+    "gulp-less": "*",
+    "gulp-minify-css": "*",
+    "gulp-jshint": "*",
+    "gulp-uglify": "*",
+    "gulp-path": "*",
+    "gulp-concat": "*",
+    "gulp-imagemin": "*",
+    "gulp-clean": "*",
+    "gulp-rename": "*",
+    "gulp-requirejs": "*",
+    "gulp-requirejs-optimize": "*",
+    "tiny-lr": "*",
+    "gulp-livereload": "*",
+    "browser-sync": "*",
+    "gulp-template": "*",
+    "gulp-file-include": "*",
+    "gulp-copy": "*",
+    "gulp-tpl2amd": "*",
+    "gulp-htmlmin": "*",
+    "run-sequence": "*",
+    "gulp-rev": "^6.0.1",
+    "gulp-rev-collector": "^1.0.2"
+  },
+  "dependencies": {
+    "fs": "0.0.2"
+  }
+}

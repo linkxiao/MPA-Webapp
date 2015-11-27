@@ -1,0 +1,107 @@
+@import "../common/css/common.less";
+@import "../common/css/base.less";
+
+  header{
+      background:#07b8dd;
+  }
+
+  .banner{
+      position: relative;
+      img{
+          height: 225px;
+          width: 100%;
+          display: block;
+      }
+      .tright{
+          position: absolute;
+          font-size: 1.4rem;
+          text-align: right;
+          bottom: 12px;
+          right: 22px;
+          z-index: 33;
+          .grade{
+              display: inline-block;
+              background: #ff904d;
+              color: #fff;
+              border-radius: 3px;
+              text-align: center;
+              padding: 3px 6px;
+              margin-right: 7px;
+          }
+          .cropt{
+              display: inline-block;
+              background: #84c2ff;
+              color: #fff;
+              border-radius: 3px;
+              text-align: center;
+              padding: 3px 6px;
+          }
+      }
+      .modal{
+          width: 100%;
+          min-height: 48px;
+          background: #333;
+          opacity: .8;
+          position: absolute;
+          bottom: 0;
+          padding: 0 22px;
+          box-sizing: border-box;
+          line-height: 2.5em;
+          p{
+              color: #fff;
+              font-size: 1.7rem;
+              padding: 10px 0;
+          }
+      }
+  }
+
+.container{
+    width: 100%;
+    //overflow: hidden;
+    .hospital-info{
+        width: 100%;
+        padding: 17px 22px;
+        box-sizing: border-box;
+        .info-item{
+            display: inline-block;
+            width: 100%;
+            padding: 4px 0;
+            font-size: 1.5rem;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            label{
+                float: left;
+                color: #a0a0a0;
+                display: table-cell;
+            }
+            .types{
+                color:#2d2d2d;
+            }
+            .phone{
+                color:#01aed2;
+            }
+            .address{
+                color:#2d2d2d;
+            }
+        }
+    }
+    .hospital-detail{
+        font-size: 1.5rem;
+        color:#2d2d2d;
+        background: #fafafa;
+        padding: 17px 22px;
+        label{
+            color:#a0a0a0;
+            display: inline-block;
+            padding-bottom: 17px;
+        }
+        p{
+            text-indent: 1.6em;
+            line-height: 2.4rem;
+            text-indent: 2.5rem;
+            text-align: justify;
+            padding-bottom: 17px;
+        }
+    }
+}
