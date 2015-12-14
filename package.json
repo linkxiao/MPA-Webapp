@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/linkxiao/MPA-Webapp.git"
+    "url": "http://gitlab.baidu.com/care-fe/superDirect.git"
   },
   "keywords": [
     "gulp-dev"
@@ -16,9 +16,9 @@
   "author": "linkxiao",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/linkxiao/MPA-Webapp.git/issues"
+    "url": "http://gitlab.baidu.com/care-fe/superDirect/issues"
   },
-  "homepage": "https://github.com/linkxiao/MPA-Webapp",
+  "homepage": "http://gitlab.baidu.com/care-fe/superDirect",
   "devDependencies": {
     "gulp": "*",
     "gulp-connect-php": "*",

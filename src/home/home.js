@@ -18,7 +18,6 @@
       //         h = h>320?320:h
       //         $('#photo').height(h+'px');
       // })();
-     //alert($+"--lin$--00200");
      view.homeTest();
      view.homePro();
  });

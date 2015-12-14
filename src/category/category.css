@@ -218,6 +218,15 @@ input[type="color"],
   /*IE6*/
 }
 /* CSS Document */
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  border: none;
+}
 header {
   width: 100%;
   height: 50px;
@@ -232,9 +241,7 @@ header {
 }
 header .header-l {
   position: absolute;
-  top: 5px;
   left: 0;
-  padding: 0 15px;
 }
 header .header-m {
   text-align: center;
@@ -255,11 +262,24 @@ header .header-r {
   position: relative;
 }
 .wrap .banner img {
-  width: 100%;
-  height: 100%;
   min-width: 320px;
-  min-height: 200px;
+  height: 160px;
   border: none;
+}
+.wrap .banner .modal {
+  width: 100%;
+  height: 48px;
+  background: url(../common/img/banner_mask.png);
+  position: absolute;
+  bottom: 0;
+  padding: 0 13px;
+  box-sizing: border-box;
+}
+.wrap .banner .modal p {
+  color: #fff;
+  font-size: 1.7rem;
+  position: absolute;
+  bottom: 7px;
 }
 .wrap .banner .banner-title {
   position: absolute;
@@ -313,34 +333,42 @@ header .header-r {
   bottom: 0;
 }
 .btn-back {
-  width: 12px;
-  height: 20px;
+  width: 55px;
+  height: 50px;
   display: inline-block;
   background-image: url("../common/img/icon/icon-arrow.png");
+  background-size: 100% 100%;
+}
+.btn-back-standard {
+  width: 55px;
+  height: 50px;
+  display: inline-block;
+  background-image: url("../common/img/icon/icon-arrow-standard.png");
   background-size: 100% 100%;
 }
 .btn-enter {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-image: url("../common/img/icon/icon-enter.png");
+  background-image: url("../common/img/icon/icon-arrow-standard.png");
+  transform: rotate(180deg);
   background-size: 100% 100%;
 }
 footer {
   width: 100%;
-  height: 48px;
+  height: 38px;
   display: block;
   margin-top: 50px;
   background-color: #ececec;
 }
 footer .outlink {
-  line-height: 48px;
+  line-height: 38px;
   font-size: 1.3rem;
   color: #7e7e7e;
   text-align: center;
 }
 footer .outlink a {
-  color: #01aed2;
+  color: #0a7fec;
 }
 header {
   background: #07b8dd;
@@ -353,10 +381,9 @@ header {
   padding: 0 5px;
 }
 .container .category-item {
-  height: 125px;
   color: #2d2d2d;
   font-size: 1.4rem;
-  border: 1px solid #f0fafd;
+  border: 1px solid #dfdfdf;
   background: #fff;
   margin: 5px 0;
   position: relative;
@@ -365,7 +392,7 @@ header {
   height: 40px;
   line-height: 40px;
   font-size: 1.5rem;
-  color: #0081b1;
+  color: #0a7fec;
   background: #f0fafd;
   padding: 0 16px;
 }
@@ -375,12 +402,24 @@ header {
 }
 .container .category-item .item-down {
   text-align: justify;
-  padding: 10px 16px;
+  margin: 10px 16px;
+  height: 57px;
+  overflow: hidden;
 }
 .container .category-item .item-down a {
   border: none;
   text-decoration: none;
   color: #000;
+  display: inline-block;
+}
+.container .category-item .item-down span {
+  display: inline-block;
+  width: 14px;
+  background: #fff;
+  color: #000;
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
 }
 .container article {
   padding: 10px 20px;
@@ -392,4 +431,8 @@ header {
   text-align: justify;
   line-height: 2.4rem;
   padding: 10px 0;
+}
+.eileen {
+  color: #f00;
+  font-size: 12px;
 }

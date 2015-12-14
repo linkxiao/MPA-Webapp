@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no, email=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <title>home</title>
-  {%include file="../common/tpl/conf.tpl"%}
+  {%include file="./common/conf.tpl"%}
+  {%assign var="title" value="{%$name%}" scope="global"%}
+  <title>{%$title%}</title>
   <link rel="stylesheet" href="{%$path%}/portal/portal.css">
 </head>
 <body>
 
 
 {%if $parts|@count neq 0 %}
-  {%include file="../common/tpl/header.tpl"%}
+  {%include file="./common/header.tpl"%}
   <div class="wrap">
 
     <div class="banner">
@@ -49,7 +50,7 @@
       </div>
     </div>
   </div>
-  {%include file="../common/tpl/footer.tpl"%}
+  {%include file="./common/footer.tpl"%}
 
 {%else%}
 <script>

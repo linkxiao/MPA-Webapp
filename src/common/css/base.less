@@ -1,5 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+  border: none;
+}
+
 header{
   width: 100%;
   height: 50px;
@@ -18,9 +28,9 @@ header{
 
   .header-l{
       position:absolute;
-      top:5px;
+      // top:5px;
       left:0;
-      padding:0 15px;
+      // padding:0 15px;
   }
   .header-m{
       text-align:center;
@@ -41,12 +51,25 @@ header{
     .banner{
         position:relative;
         img{
-          width:100%;
-          height:100%;
           min-width: 320px;
-          min-height: 200px;//160px;
+          height: 160px;
           border:none;
         }
+        .modal{
+          width: 100%;
+          height: 48px;
+          background: url(../common/img/banner_mask.png);
+          position: absolute;
+          bottom: 0;
+          padding: 0 13px;
+          box-sizing: border-box;
+          p{
+              color: #fff;
+              font-size: 1.7rem;
+              position: absolute;
+              bottom: 7px;
+              }
+          }
         .banner-title{
           position: absolute;
           bottom: 5px;
@@ -123,20 +146,25 @@ header{
     bottom: 0;
 }
 .btn-back{
-  width: 12px;
-  height: 20px;
+  width: 55px;
+  height: 50px;
   display: inline-block;
-  //position:relative;
-  // top:2px;
-  // left:0;
   background-image: url("../common/img/icon/icon-arrow.png");
+  background-size: 100% 100%;
+}
+.btn-back-standard{
+  width: 55px;
+  height: 50px;
+  display: inline-block;
+  background-image: url("../common/img/icon/icon-arrow-standard.png");
   background-size: 100% 100%;
 }
 .btn-enter{
   display:inline-block;
   width:40px;
   height:40px;
-  background-image: url("../common/img/icon/icon-enter.png");
+  background-image: url("../common/img/icon/icon-arrow-standard.png");
+  transform:rotate(180deg);
   background-size: 100% 100%;
 }
 // footer{
@@ -155,17 +183,17 @@ header{
 // }
 footer{
     width: 100%;
-    height:48px;
+    height:38px;
     display:block;
     margin-top:50px;
     background-color: #ececec;//#e8ebed;
     .outlink{
-        line-height: 48px;
+        line-height: 38px;
         font-size: 1.3rem;
         color:#7e7e7e;
         text-align: center;
         a{
-            color: #01aed2;
+            color: #0a7fec;
         }
     }
 }

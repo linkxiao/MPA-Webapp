@@ -1,7 +1,7 @@
 
 .home #photo {
   width: 100%;
-  height: 200px;//225px;
+  height: 160px;//225px;
   overflow: hidden;
   position: relative;
 }
@@ -41,7 +41,7 @@
 }
 .home .pagination {
   width: 20%;
-  right: 0;
+  right: 13px;
   bottom: 10px;
   text-align: right;
   // width: 100%;
@@ -56,19 +56,18 @@
   transform: translate3d(0, 0, 0);
 }
 .home .pagination span {
-  width: 6px;
-  height: 6px;
+  width: 2px;
+  height: 2px;
   display: inline-block;
   border: 1px solid rgba(255,255,255,0.5);
   border-radius:50%;
-  background-color: rgba(255,255,255,0);
+  opacity: .8;
   margin: 0 3px;
-  // -webkit-background-origin: padding;
-  //         background-origin: padding;
-  // background-color: rgba(255,255,255,0);
-  // margin: 0 3px;
-  // border: 1px solid rgba(255,255,255,0.5);
+  background: #fff;
 }
 .home .pagination span.active {
   background-color: #fff;
+  height: 3px;
+  width: 3px;
+  opacity: 1;
 }

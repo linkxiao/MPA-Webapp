@@ -218,6 +218,15 @@ input[type="color"],
   /*IE6*/
 }
 /* CSS Document */
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  border: none;
+}
 header {
   width: 100%;
   height: 50px;
@@ -232,9 +241,7 @@ header {
 }
 header .header-l {
   position: absolute;
-  top: 5px;
   left: 0;
-  padding: 0 15px;
 }
 header .header-m {
   text-align: center;
@@ -255,11 +262,24 @@ header .header-r {
   position: relative;
 }
 .wrap .banner img {
-  width: 100%;
-  height: 100%;
   min-width: 320px;
-  min-height: 200px;
+  height: 160px;
   border: none;
+}
+.wrap .banner .modal {
+  width: 100%;
+  height: 48px;
+  background: url(../common/img/banner_mask.png);
+  position: absolute;
+  bottom: 0;
+  padding: 0 13px;
+  box-sizing: border-box;
+}
+.wrap .banner .modal p {
+  color: #fff;
+  font-size: 1.7rem;
+  position: absolute;
+  bottom: 7px;
 }
 .wrap .banner .banner-title {
   position: absolute;
@@ -313,54 +333,64 @@ header .header-r {
   bottom: 0;
 }
 .btn-back {
-  width: 12px;
-  height: 20px;
+  width: 55px;
+  height: 50px;
   display: inline-block;
   background-image: url("../common/img/icon/icon-arrow.png");
+  background-size: 100% 100%;
+}
+.btn-back-standard {
+  width: 55px;
+  height: 50px;
+  display: inline-block;
+  background-image: url("../common/img/icon/icon-arrow-standard.png");
   background-size: 100% 100%;
 }
 .btn-enter {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-image: url("../common/img/icon/icon-enter.png");
+  background-image: url("../common/img/icon/icon-arrow-standard.png");
+  transform: rotate(180deg);
   background-size: 100% 100%;
 }
 footer {
   width: 100%;
-  height: 48px;
+  height: 38px;
   display: block;
   margin-top: 50px;
   background-color: #ececec;
 }
 footer .outlink {
-  line-height: 48px;
+  line-height: 38px;
   font-size: 1.3rem;
   color: #7e7e7e;
   text-align: center;
 }
 footer .outlink a {
-  color: #01aed2;
+  color: #0a7fec;
 }
 .banner {
   background-size: 100% 100%;
   position: relative;
 }
 .banner img {
-  min-height: 225px;
+  width: 100%;
+  height: 160px;
+  display: block;
 }
 .container {
   width: 100%;
   overflow: hidden;
   font-size: 10px;
+  background: #ececec;
 }
 .container .content {
-  height: 290px;
-  background-color: #ececec;
   padding-left: 13px;
   padding-right: 13px;
 }
 .container .content h5 {
+  font-weight: normal;
   width: 100%;
   line-height: 40px;
   display: inline-block;
@@ -373,22 +403,22 @@ footer .outlink a {
   margin-right: 6px;
   border-radius: 1px;
   line-height: 1.5rem;
-  background-color: #01aed2;
+  background-color: #0a7fec;
   vertical-align: middle;
 }
 .container .content h5 .tips {
   width: 80%;
   display: inline-block;
   line-height: 40px;
-  color: #01aed2;
-  font-weight: bold;
+  color: #0a7fec;
   font-size: 1.5rem;
   vertical-align: middle;
 }
 .container .content .item {
   height: 60px;
   padding: 10px;
-  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  background: #fff;
   margin-bottom: 5px;
   position: relative;
 }
@@ -412,6 +442,9 @@ footer .outlink a {
   line-height: 35px;
   vertical-align: middle;
   position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .container .content .item .detail .address {
   font-size: 1.5rem;
@@ -425,7 +458,7 @@ footer .outlink a {
   top: 30px;
   width: 15px;
   height: 15px;
-  background: url(../common/img/icon.png);
+  background: url(../common/img/qingyi/icon.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   right: 5px;

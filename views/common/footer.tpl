@@ -2,7 +2,7 @@
     <p class="outlink">如需更多预约挂号服务，请到<a href="http://yi.baidu.com">百度医生>></a></p>
 </footer>
 <!-- <script src="../../vendor/jquery/jquery.min.js"></script> -->
-<script src="http://cdn.bootcss.com/require.js/2.1.20/require.min.js"></script>
+<script src="http://apps.bdimg.com/libs/require.js/2.1.9/require.min.js"></script>
 <script>
 //define('global/path', {%$tplData.path|@json_encode%});
 //define('global/hospi', {%$tplData.hospiData|@json_encode%});

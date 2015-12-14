@@ -9,6 +9,7 @@ output/
 release/
 directDemo/
 gulpfile-new.js
+gulpfile20151209.js
 
 tmp
 npm-debug.log
