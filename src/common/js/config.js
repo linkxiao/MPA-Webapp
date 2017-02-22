@@ -1,6 +1,6 @@
 /*
  * @file   The location href for common
- * @author linkxiao(xiaofengyan@baidu.com)
+ * @author linkxiao(linkxiao@icloud.com)
  * @date   2015/04/24
  */
 

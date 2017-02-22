@@ -1,6 +1,6 @@
 /*
  * @file   The gulpfile for current project
- * @author linkxiao(xiaofengyan@baidu.com)
+ * @author linkxiao(linkxiao@icloud.com)
  * @date   2015/11/10
  */
 require.config({
